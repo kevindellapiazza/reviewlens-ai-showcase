@@ -1,0 +1,29 @@
+# --- Python Virtual Environments ---
+dashboard/.venv/
+.venv/
+
+# --- Python Cache ---
+__pycache__/
+*.pyc
+
+# --- IDE / Editor ---
+.vscode/
+
+# --- OS-specific ---
+.DS_Store
+Thumbs.db
+
+# --- SECRETS & DATA ---
+dashboard/.streamlit/secrets.toml
+secrets.toml
+
+# Ignore credential files
+*.pem
+hf_token.txt
+
+# Ignore downloaded AI models and data
+notebooks/checkpoints/
+notebooks/checkpoints.json
+notebooks/*.result.json
+notebooks/.ipynb_checkpoints/
+data/
