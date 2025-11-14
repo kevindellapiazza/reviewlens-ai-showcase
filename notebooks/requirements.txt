@@ -1,0 +1,15 @@
+# Core Data Science stack
+pandas
+numpy
+scikit-learn
+tqdm
+ipython
+stopit
+
+# AI & NLP Stack (using latest versions)
+# 'torch' is required by transformers & sentence-transformers
+torch
+transformers
+sentencepiece
+bertopic
+sentence-transformers

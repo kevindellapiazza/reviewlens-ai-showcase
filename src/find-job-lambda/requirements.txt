@@ -1,0 +1,7 @@
+# This file is intentionally left empty.
+#
+# The 'find-job-lambda' function only uses libraries
+# that are already included in the standard AWS Lambda Python 3.12 runtime
+# (e.g., boto3, os, json).
+#
+# No external packages need to be installed via pip.

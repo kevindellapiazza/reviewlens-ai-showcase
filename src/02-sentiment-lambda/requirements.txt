@@ -1,0 +1,13 @@
+# For reading/manipulating the batch data
+pandas
+
+# Core NLP library
+transformers
+
+# CPU-only version of PyTorch. This is a critical optimization
+# to reduce image size, as we don't need the CUDA (GPU) libraries
+# in a Lambda environment.
+torch --index-url https://download.pytorch.org/whl/cpu
+
+# Dependency for transformers
+tokenizers
