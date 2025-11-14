@@ -1,0 +1,17 @@
+# Data wrangling and saving to S3 Parquet
+awswrangler[s3]
+pandas
+pyarrow==14.0.1
+
+# Core AI libraries
+transformers==4.29.0
+torch==2.1.0+cpu
+huggingface-hub
+tokenizers==0.13.3
+
+# --- Stability Pins ---
+# numpy<2.0 is CRITICAL to prevent API breaks with torch/pandas
+numpy<2.0
+# protobuf pin resolves dependency conflicts between
+# google-cloud libraries (from awswrangler) and transformers.
+protobuf==3.20.0

@@ -1,0 +1,28 @@
+# --- PyTorch (CPU-Only) ---
+# Must be at the top to ensure the CPU-only version is used
+--index-url https://download.pytorch.org/whl/cpu
+torch
+
+# --- Main Application Stack ---
+--index-url https://pypi.org/simple
+# For S3 Parquet operations (read/write/delete)
+awswrangler[s3]
+pyarrow==14.0.1
+
+# --- BERTopic ML Stack ---
+# The core topic modeling library
+bertopic==0.15.0
+# The embedding model library
+sentence-transformers==2.2.2
+# Core dependency for sentence-transformers
+transformers==4.29.0
+
+# --- Critical Stability Pins ---
+# To resolve complex dependency conflicts between torch, transformers, and bertopic.
+# numpy<2.0: Prevents API-breaking changes in Numpy 2.0
+numpy<2.0
+# huggingface-hub<0.21.0: Prevents API-breaking changes
+huggingface-hub<0.21.0
+# Specific pins for transformers 4.29.0
+tokenizers==0.13.3
+sentencepiece==0.2.0

@@ -1,0 +1,29 @@
+# --- Terraform State & Cache ---
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+*.tfplan
+
+# --- Local Secret Files ---
+.streamlit/
+secrets.toml
+*.tfvars
+*.auto.tfvars
+*.pem
+
+# --- Python Cache & Packages ---
+.venv/
+venv/
+venv_scanner/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Build Artifacts ---
+*.zip
+
+# --- OS Files ---
+.DS_Store
+Thumbs.db
